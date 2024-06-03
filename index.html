@@ -5,13 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
 
+    <!-- file css -->
+    <link rel="stylesheet" href="/styles/style.css" />
+
     <!-- Link Font Awesome -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
     />
-    <!-- file css -->
-    <link rel="stylesheet" href="/styles/style.css" />
+
+    <!--  Link swiper's css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
   </head>
   <body>
     <header>
@@ -95,8 +100,52 @@
       </div>
     </div>
 
+    <section class="slider">
+        <div class="container">
+            <div class="side_bar">
+                <h2><i class="fa-solid fa-bars"></i>Categorias</h2>
+                <a href="">Más Vendidos</a>
+                <a href="">Productos Nuevos</a>
+                <a href="">Ofertas</a>
+                <a href="">Computadoras</a>
+                <a href="">Telefonos</a>
+                <a href="">Tablets</a>
+                <a href="">Consolas</a>
+                <a href="">Electronica</a>
+                <a href="">Audio</a>
+            </div>
+
+             <!-- Swiper -->
+            <div class="slide-swp mySwiper">
+                <div class="swiper-wrapper">
+
+                <div class="swiper-slide">
+                    <img src="/img/slider-01.jpg" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="/img/slider-02.jpg" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="/img/slider-03.jpg" />
+                </div>
+                </div>
+                
+                <!-- <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div> -->
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </section>
 
 
+
+
+
+    
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  
     <script src="/js/main.js"></script>
   </body>
 </html>

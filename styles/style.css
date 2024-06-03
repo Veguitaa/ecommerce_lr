@@ -333,3 +333,73 @@ header .links .loging_signup a{
 .cart .button_cart .trans_bg:hover{
     background: var(--main-color);
 }
+
+
+/* END CART */
+
+/* SLIDER PRINCIPAL*/
+
+.slider .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.slider .container .side_bar{
+    width: 300px;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+}
+
+.slider .container .side_bar h2{
+    padding: 20px 15px;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    font-size: 18px;
+}
+
+.slider .container .side_bar a{
+    padding: 15px;
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--dark-color);
+    border-top: 1px solid var(--border-color);
+    transition: .3s ease-in-out;
+}
+
+.slider .container .side_bar a:hover{
+    color: var(--main-color);
+}
+
+
+.slider .container .slide-swp{
+    width: calc(100% - 350px);
+    overflow: hidden;
+    position: relative;
+}
+
+.slider .container .slide-swp img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: left top;
+}
+
+
+.slider .container .slide-swp .swiper-button-next:hover,
+.slider .container .slide-swp .swiper-button-prev:hover {
+    color: var(--main-color);
+}
+
+.slider .container .slide-swp .swiper-pagination span{
+   background: #fff;
+   opacity: 1;
+}
+
+.swiper-pagination-bullet-active{
+    background: var(--main-color) !important;
+    width: 35px !important;
+    height: 8px !important;
+    border-radius: 30px !important;
+}
