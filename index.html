@@ -1,53 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
 
-     <!-- Link Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <!-- Link Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
     <!-- file css -->
-    <link rel="stylesheet" href="/styles/style.css">
-</head>
-<body>
-
+    <link rel="stylesheet" href="/styles/style.css" />
+  </head>
+  <body>
     <header>
-        <div class="container top-nav">
-            <a href="#" class="logo"><img src="/img/logo-black.png" alt=""></a>
-            <form action="" class="search">
-                <input type="search" placeholder="Busca tu producto...">
-                <button type="submit">Buscar</button>
-            </form>
+      <div class="container top-nav">
+        <a href="#" class="logo"><img src="/img/logo-black.png" alt="" /></a>
+        <form action="" class="search">
+          <input type="search" placeholder="Busca tu producto..." />
+          <button type="submit">Buscar</button>
+        </form>
 
-            <div class="cart_header">
-                <div class="icon_cart">
-                    <i class="fa-solid fa-bag-shopping"></i>
-                    <span class="count_item">0</span>
-                </div>
-                <div class="total_price">
-                    <p>Mi Carrito:</p>
-                    <p class="price_cart_head">$0</p>
-                </div>
-            </div>
+        <div class="cart_header">
+          <div onclick="open_cart()" class="icon_cart">
+            <i class="fa-solid fa-bag-shopping"></i>
+            <span class="count_item">0</span>
+          </div>
+          <div class="total_price">
+            <p>Mi Carrito:</p>
+            <p class="price_cart_head">$0</p>
+          </div>
+        </div>
+      </div>
+
+      <nav>
+        <div class="links container">
+          <ul>
+            <li class="active"><a href="">Inicio</a></li>
+            <li><a href="">Tienda</a></li>
+            <li><a href="">Conocenos</a></li>
+            <li><a href="">Contactanos</a></li>
+          </ul>
+
+          <div class="loging_signup">
+            <a href=""
+              >Conectarse <i class="fa-solid fa-right-to-bracket"></i
+            ></a>
+            <a href="">Registrarse <i class="fa-solid fa-user-plus"></i></a>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <div class="cart">
+      <div class="top_cart">
+        <h3>Mi Carrito <span>(0 productos)</span></h3>
+        <span onclick="close_cart()" class="close_cart"><i class="fa-regular fa-circle-xmark"></i></span>
+      </div>
+
+      <div class="items_in_cart">
+        <div class="item_cart">
+        <img src="/img/product/product-1.jpg" alt="">
+        <div class="content">
+            <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. </h4>
+            <p class="price_cart">$140</p>
+        </div>
+        <button class="delete_item"><i class="fa-solid fa-trash-can"></i></button>
         </div>
 
-        <nav>
-            <div class="links container">
-               <ul>
-                <li class="active"><a href="">Inicio</a></li>
-                <li><a href="">Tienda</a></li>
-                <li><a href="">Conocenos</a></li>
-                <li><a href="">Contactanos</a></li>
-               </ul>
+        <div class="item_cart">
+        <img src="/img/product/product-2.jpg" alt="">
+        <div class="content">
+            <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. </h4>
+            <p class="price_cart">$140</p>
+        </div>
+        <button class="delete_item"><i class="fa-solid fa-trash-can"></i></button>
+        </div>
 
-               <div class="loging_signup">
-                <a href="">Conectarse <i class="fa-solid fa-right-to-bracket"></i></a>
-                <a href="">Registrarse <i class="fa-solid fa-user-plus"></i></a>
-               </div>
-            </div>
-        </nav>
-    </header>
-    
-</body>
+      </div>
+
+      <div class="bottom_cart">
+        <div class="total">
+          <p>Subtotal</p>
+          <div class="price_cart_total">$0</div>
+        </div>
+
+
+        <div class="button_cart">
+            <a href="" class="btn_cart">Verificar compra</a>
+            <button class="btn_cart trans_bg">Seguir comprando</button>
+          </div>
+
+      </div>
+    </div>
+
+
+
+    <script src="/js/main.js"></script>
+  </body>
 </html>
