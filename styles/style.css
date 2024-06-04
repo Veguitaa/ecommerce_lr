@@ -502,13 +502,19 @@ header .links .loging_signup a{
     z-index: 100;
 }
 
+/* banner big */
+
+.banner_big .container .banner_img{
+    width: 49%;
+    position: relative;
+}
 
 /* END BANNER */
 
 /* SLIDE PRODUCTS */
 
 .product_sale{
-    margin-bottom: 100px;
+    margin-bottom: 50px;
 }
 
 .title_top_sale{
@@ -540,11 +546,8 @@ header .links .loging_signup a{
 .product_slice_wrapp{
     overflow: hidden;
     position: relative;
-    padding-bottom: 80px;
+    padding-bottom: 20px;
 }
-
-
-
 
 .productSwiper .btn_swip{
     color: #fff;
@@ -552,8 +555,7 @@ header .links .loging_signup a{
     font-weight: bold;
     padding: 25px;
     border-radius: 50%;
- 
-   
+
 }
 
 .productSwiper .btn_swip::after{
@@ -613,8 +615,8 @@ header .links .loging_signup a{
   }
   
   .product-body .product-image img{
-    max-height:100%;
-    max-width:100%
+    max-height:70%;
+    max-width:70%
   }
 
   .product-body .product-info{
@@ -680,6 +682,89 @@ header .links .loging_signup a{
   
 
 
+  /*  SECTION PARALLAX */
 
-
+  .parallax {
+    background: url("/img/back_parallax.jpg") no-repeat center ;
+    background-size: cover; 
+    background-attachment: fixed; 
+    height: 450px;
+    position: relative;
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
   
+  .wrapper_parallax {
+    display: flex;
+    /* text-align: center; */
+    justify-content: space-around;
+    height: 100%;
+  }
+
+  .wrapper_parallax .info_parallax{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 50%;
+    
+  
+  }
+
+  .wrapper_parallax .info_parallax h3{
+    color: #fff;
+    font-size: 50px;
+  }
+  .wrapper_parallax .info_parallax p{
+    color: #fff;
+    width: 80%;
+    font-size: 20px;
+    margin: 10px 0 30px;
+  }
+
+  .parallax_btn{
+    border-radius: 999px;
+    padding: 15px 30px;
+    font-size:20px;
+    font-weight:500;
+    color:white;
+    background: rgba(255,255,255,0.1);
+    backdrop-filter:blur(5px);
+    z-index:20;
+    cursor:pointer;
+    border:none;
+  }
+  .parallax_btn:hover {
+    transform: scale(1.1);
+  }
+
+  .wrapper_parallax .img_parralax{
+   width: 50%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+  }
+  
+  .wrapper_parallax .img_parralax img{
+    /* width: 50%; */
+    filter: drop-shadow(0px 0px 10px #fff);
+  }
+
+
+
+  /* SECTION MARCAS */
+
+  .wrapper_logos_marcas{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+
+
+.wrapper_logos_marcas img{
+    filter: grayscale(1);
+    width: 200px;
+    
+}

@@ -1,5 +1,5 @@
 
-/* Initialize Swiper  */
+/* Swiper category  */
 
 var swiper = new Swiper(".slide-swp", {
 
@@ -24,10 +24,7 @@ var swiper = new Swiper(".slide-swp", {
 
   });
 
-
-  
-
-
+/* Swiper sale product 1  */
   var swiper = new Swiper(".productSwiper", {
     slidesPerView: 6,
     spaceBetween: 25,
@@ -51,3 +48,6 @@ var swiper = new Swiper(".slide-swp", {
       },
     },
   });
+
+
+/* Swiper sale product 2  */
